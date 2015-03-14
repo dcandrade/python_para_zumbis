@@ -2,17 +2,11 @@ from random import randint
 
 sorteado = randint(1,100)
 
-chute = 0
-
-while sorteado != chute:
+while True:
 	chute = int(input("Chute: "))
-	
 	if chute == sorteado:
-		print "Voce venceu!"
-	else:
-		if chute > sorteado:
-			print "Alto"
-		else:
-			print "baixo"
+		print("Voce venceu!")
+	else: 
+		print('Alto' if chute > sorteado else 'Baixo')
 
-print "FIm de jogo!"
+print("Fim de jogo!")
